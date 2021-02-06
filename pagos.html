@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="./styles/pagos.css">
+
+    <!-- JavaScript -->
+    <script src="./js/script.js"></script>
+
+    <!-- CDN SweetAlert -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+<body>
+    
+    <!-- Barra de navegacion -->
+    <div class="container">
+        <nav>
+            <!-- Logo -->
+            <div class="nav-logo-container">
+                <a href="#menu"><img class="nav-logo" src="./styles/img/nav-logo.png" alt="rick_&_morty"></a>
+            </div>
+            <!-- Opciones -->
+            <ul class="nav-link">
+                <li><a href="./index.html">Contactanos</a></li>
+                <li><a href="#pagos">Pagos</a></li>
+            </ul>
+        </nav>
+    </div>
+    <!-- Barra de navegacion final -->
+
+    <section class="payment">
+        <header>
+            <h1>Pago Electronico</h1>
+        </header>
+
+        <div class="Body-container">
+            <div class="form-container">
+                <form action="">
+                    <input type="text" placeholder="Nombre" id="name" required minlength="3">
+                    <input type="text" placeholder="Apellidos" id="lastName" required minlength="3">
+                    <input type="text" placeholder="Numero de tarjeta" id="numCard" required minlength="13" maxlength="18">
+                    <input type="text" placeholder="Fecha de Vencimiento(MM/AA)" id="endDate" required minlength="5" maxlength="5">
+                    <input type="text" placeholder="Codigo CVV" id="cvvCode" required minlength="3">
+                </form>
+                <button class="btn-form" type="submit" onclick="verifySpaces()">Enviar</button>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
